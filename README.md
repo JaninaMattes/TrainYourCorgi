@@ -1,4 +1,5 @@
-# Train Your Corgi
+# ML-GoodBoyDemo
+GoodBoy ML-Agents Demo Project
 
 This project aims to explore _reinforcement learning_ as a strategy to guide an ml-agent in a mixed reality application. Mixed reality applications allow virtual content to interact with an environment as detected by sensors, such as a smartphone camera. This poses the challenge of finding algorithms that can cope with a variety of uncontrollable environments. Machine learning gives here a way to adapt and overcome this challenge. In this project reinforcement learning is used to provide the framework for defining the behavior of a Non-Player-Character. The NPC can be trained by providing it with rewards when it achives the desired goal and completes a task correctly. This is showcased by a mixed reality mobile game for Android where a user can play fetch with a dog in a virtual scene placed on a real world environment. 
 
@@ -12,13 +13,15 @@ Three main paradigms exist in machine learning: _Supervised learning_, _unsuperv
 
 ### Game structure and interaction
 
-An agent, represented by a gameobject, in this case a corgi dog model is placed onto a virtual scene in a real environment. The interaction between user and the pre-trained model contains that a user can play fetch with a dog in a virtual scene. The user can start the game by throwing a stick to the dog and swiping on the screen. The dog then finds the target object and throws it back. Further the dogs motion is iself driven by the physics engine. This means for instance that the motion of the corgi can be affected by surrounding RigidBodies. The trained gameobject learns to walk, run, jump and fetch the stick using reinforcement learning.
+An agent, represented by a gameobject, in this case a corgi dog model is placed onto a virtual scene in a real environment. The interaction between user and the trained model contains that a user can play fetch with a dog in a virtual scene. The user can start the game by throwing a stick to the dog and swiping on the screen. The dog then finds the target object and throws it back. Further the dogs motion is iself driven by the physics engine. This means for instance that the motion of the corgi can be affected by surrounding RigidBodies. The trained gameobject learns to walk, run, jump and fetch the stick using reinforcement learning.
 
 The images below demo the game in action:
 
-![TrainYourCorgi](TraingYourCorgi1.jpg)
+![Intro](TraingYourCorgi1.jpg)
 
-![TrainYourCorgi](TraingYourCorgi2.jpg)
+![Start the Game](TraingYourCorgi2.jpg)
+
+![Player](TraingYourCorgi3.jpg)
 
 ### Implementation and prerequisites
 
@@ -26,7 +29,7 @@ The application is delivered as an Android app. The app itself is created in Uni
 
 #### Modelling the environment with ARCore
 
-ARCore is Google’s framework for augmented reality. Programming against this API enables us to easily extract terrain features such as obstacles from the camera stream.
+ARCore is Google’s framework for augmented reality. Programming against this API enables to easily extract terrain features such as obstacles from the camera stream.
 
 See further information under [ARCore Overview](https://developers.google.com/ar/discover/)
 
@@ -39,15 +42,11 @@ See further information under [Unity Machine Learning Agents Toolkit](https://gi
 
 TensorFlow is Google’s primary machine learning framework. We use the Python interface provided by the MLAgents framework to train agents with reinforcement learning.
 
-## Deployment
-
-
 ## Built With
 
-* [Unity](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [ARCore](https://maven.apache.org/) - Dependency Management
-* [Tensorflow](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-* [Python](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Unity](https://docs.unity3d.com/Manual/) - The Game Engine used
+* [ARCore](https://developers.google.com/ar/) - Modelling the environment
+* [Tensorflow](https://www.tensorflow.org/) - Primary machine learning framework
 
 ## Contributing
 
@@ -55,9 +54,12 @@ TensorFlow is Google’s primary machine learning framework. We use the Python i
 
 ## Authors
 
-* **Max Mustermann** - *Initial work* - [Puppo The Corgi](https://github.com/)
+* **Janina Mattes** 
+* **Christopher Voit**
+* **Swaroop Pal** 
+* **Alexander von Peinen**
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+- *Initial work* - [Good Boy Demo](https://github.com/TrainYourCorgi)
 
 ## License
 
